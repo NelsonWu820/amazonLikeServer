@@ -29,7 +29,7 @@ app.use("/api/cart", require("./routes/api/cart"));
 app.use("/api/items", require("./routes/api/items"));
 
 // Serve static assets in production
-/*if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
     // Set static folder
     app.use(express.static('client/build'));
   
@@ -38,7 +38,7 @@ app.use("/api/items", require("./routes/api/items"));
     app.get('*', (req, res) => {
       res.json("Works");
     });
-}*/
+}
 
 //checks for open port if none set to 5000 by default
 const PORT = "https://amazon-like-server.vercel.app/" || process.env.PORT || 5000;
