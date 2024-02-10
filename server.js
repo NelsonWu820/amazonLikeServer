@@ -6,14 +6,15 @@ const cors = require('cors');
 
 const app = express();
 
+const corsOptions ={
+  origin:"https://amazon-like-server.vercel.app", 
+  methods: ["POST", "GET"],
+  credentials:true,           
+  optionSuccessStatus:200
+}
+
 //code for vercel deployment
-app.use(cors(
-  {
-    origin: ["https://amazon-like-server.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true 
-  }
-));
+app.use(cors(corsOptions));
 
 //connect to db
 connectDB();
