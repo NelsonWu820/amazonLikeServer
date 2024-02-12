@@ -15,10 +15,10 @@
     "headers": [
       {
         "source": "/server.js",
-        "headers": {
+        "headers": [{
           "key": "CORS_ALLOWED_ORIGINS",
           "value": "true"
-        }
+        }]
       }
     ]
     
