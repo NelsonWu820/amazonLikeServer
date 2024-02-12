@@ -31,17 +31,14 @@ app.use("/api/items", require("./routes/api/items"));
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
-    app.get('/', (req, res) => {
-      res.json("works")
-    })
-    /*// Set static folder
+// Set static folder
     app.use(express.static('client/build'));
   
     //gets the index.html from client/build
     //for vercel deployment
     app.get('/', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    });*/
+      //res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
 }
 
 //checks for open port if none set to 5000 by default
