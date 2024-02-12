@@ -13,7 +13,13 @@
         }
       ],
     "headers": [
-      {"CORS_ALLOWED_ORIGINS" : "true" }
+      {
+        "source": "/server.js",
+        "headers": {
+          "key": "CORS_ALLOWED_ORIGINS",
+          "value": "true"
+        }
+      }
     ]
     
   }
