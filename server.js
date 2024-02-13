@@ -8,7 +8,7 @@ const app = express();
 
 const corsOptions ={
   origin:"https://amazon-like-frontend.vercel.app", 
-  methods: ["POST", "GET"],
+  methods: ["POST", "GET", "DELETE", "PUT"],
   credentials:true,           
   optionSuccessStatus:200
 }
