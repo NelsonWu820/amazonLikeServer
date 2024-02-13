@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 
 const corsOptions ={
-  origin:"https://amazon-like-frontend-ha85ndq8y-nelsonwu820s-projects.vercel.app", 
+  origin:"https://amazon-like-frontend-ky41k0aer-nelsonwu820s-projects.vercel.app", 
   methods: ["POST", "GET", "DELETE", "PUT"],
   credentials:true,           
   optionSuccessStatus:200
@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 //checks for open port if none set to 5000 by default
-const PORT =  process.env.PORT || 5000;
+const PORT =  "https://amazon-like-frontend-ky41k0aer-nelsonwu820s-projects.vercel.app" || process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on Port ${PORT}`));
 
