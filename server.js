@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 
 const corsOptions ={
-  origin:"https://amazon-like-frontend.vercel.app", 
+  origin:"https://amazon-like-frontend-aoaqicl3l-nelsonwu820s-projects.vercel.app", 
   methods: ["POST", "GET", "DELETE", "PUT"],
   credentials:true,           
   optionSuccessStatus:200
