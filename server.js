@@ -28,25 +28,26 @@ app.use("/api/cart", require("./routes/api/cart"));
 app.use("/api/items", require("./routes/api/items"));
 
 // Serve static assets in production
-/*if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
 // Set static folder
     app.use(express.static('client/build'));
   
     //gets the index.html from client/build
     //for vercel deployment
+    app.get('*', (req, res) => {
+      res.json(["one", "two"])
+    });
+    /*
     app.get('/', (req, res) => {
       //res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    });
-}*/
+    });*/
+}
 
 //checks for open port if none set to 5000 by default
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on Port ${PORT}`));
 
-app.get('*', (req, res) => {
-  res.json(["one", "two"])
-});
 
 //for vercel to turn Express into serveless function
 module.exports = app;
