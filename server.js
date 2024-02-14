@@ -39,10 +39,6 @@ app.use("/api/items", require("./routes/api/items"));
     });
 }*/
 
-app.get('*', (req, res) => {
-  res.json("Neat")
-});
-
 //checks for open port if none set to 5000 by default
 const PORT = process.env.PORT || 5000;
 
