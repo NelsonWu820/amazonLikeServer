@@ -45,7 +45,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on Port ${PORT}`));
 
 app.get('*', (req, res) => {
-  res.json("Neat")
+  res.json(["one", "two"])
 });
 
 //for vercel to turn Express into serveless function
