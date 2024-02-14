@@ -9,7 +9,7 @@ const app = express();
 
 //code for vercel deployment
 app.use(cors({
-    origin:"https://amazon-like-frontend-aoaqicl3l-nelsonwu820s-projects.vercel.app", 
+    origin:"https://amazon-like-frontend-dkoapcoso-nelsonwu820s-projects.vercel.app", 
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials:true
 }));
