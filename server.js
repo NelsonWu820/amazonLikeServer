@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'production') {
     //gets the index.html from client/build
     //for vercel deployment
     app.get('*', (req, res) => {
-      res.json(["one", "two"])
+      res.json(["one", "two", "three"])
     });
     /*
     app.get('/', (req, res) => {
