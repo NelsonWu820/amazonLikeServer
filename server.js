@@ -25,11 +25,11 @@ app.get('/', (req, res) => {
 app.use(express.json());
 
 //routes defined
-app.use("/api/auth", require("./routes/api/auth"));
-app.use("/api/users", require("./routes/api/users"));
-app.use("/api/profile", require("./routes/api/profile"));
-app.use("/api/cart", require("./routes/api/cart"));
-app.use("/api/items", require("./routes/api/items"));
+app.use("/auth", require("./routes/api/auth"));
+app.use("/users", require("./routes/api/users"));
+app.use("/profile", require("./routes/api/profile"));
+app.use("/cart", require("./routes/api/cart"));
+app.use("/items", require("./routes/api/items"));
 
 // Serve static assets in production
 /*if (process.env.NODE_ENV === 'production') {
