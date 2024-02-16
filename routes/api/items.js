@@ -13,7 +13,6 @@ router.get("/",
     async (req, res) => {
         //should get all items
         const items = await Items.find({});
-        console.log(res.json(items))
         try {
             return res.json(items);
         } catch (err) {
